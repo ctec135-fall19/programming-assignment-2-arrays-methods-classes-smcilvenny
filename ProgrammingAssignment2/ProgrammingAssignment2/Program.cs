@@ -33,15 +33,17 @@ namespace ProgrammingAssignment2
             }
 
             //Array problem 3 - multiplication table
+            int myInt = 12;
 
-            int[,] multiplicationTable = new int[12, 12];
+            int[,] multiplicationTable = new int[myInt, myInt];
 
-            for (int j = 0; j <=12; j++)
+            for (int j = 1; j <= myInt; j++)
             {
-                for (int k = 0; k <=12; k++)
+                for (int k = 1; k <= myInt; k++)
                 {
-                    multiplicationTable[j, k] = j * k;
+                    Console.Write(j * k + "-----");
                 }
+                Console.WriteLine();
             }
 
 
